@@ -19,26 +19,25 @@
 # Check the status of Docker. If it is not running, initiate it.
 # Pulled memory-efficient postgres image from docker hub
   docker pull postgres:13-alpine
-  systemct1 status docker || systemct1 start docker
+  systemctl status docker || systemctl start docker
 
 # Creating a PSQL image
+  colourStart="\e[32m"
+  colourEnd="\e[0m"
   options=$1
-  db_username=$centos # This can be changed to make it more personalized to the user
-  db_password=$centos1234 # This can be changed to make it more personalized to the user
+
+    # General reminders that will occur at every instance
+    echo -e " -------------------------------------------------------------------\n"
+    echo -e "\e[36m Usage: \n${colourEnd}"
+    echo -e "\e[36m Please enter one of the following option:\n create_username_password\n start\n stop\n${colourEnd}"
+    echo -e "\e[3m Note that you must know your username and password to create a PSQL container\n${colourEnd}"
+    echo -e " -------------------------------------------------------------------\n"
+
     case $options in
-        create)
+        create_centos_centos1234)
           # Lists all and filters the docker containers to search if container with name: jrvs-psql exists
             if [ "$(docker container ls -a -f name=jrvs-psql | wc -l)" == 2 ]; then
-                echo -e "Container is already created!\n"
-                echo -e "\e[3musage: ./scripts/psql_docker.sh create db_username db_password\e[0m"
-                exit 1
-            fi
-
-          # Checks to see if anything was entered for the username and password
-          # If nothing was entered it will provide the correct username and password [Remove feature in Master version]
-            if [ $db_username == "" || $db_password == "" ]; then
-                echo -e "Please enter the correct username and password\n"
-                echo -e "\e[3musage:\n username = centos \n password = centos1234\e[0m"
+                echo -e "${colourStart} Container is already created!\n${colourEnd}"
                 exit 1
             fi
 
@@ -51,33 +50,28 @@
 
           # Checks to see if container was created
             if [ "$(docker container ls -a -f name=jrvs-psql | wc -l)" == 1 ]; then
-                echo -e "Container does not exist\n"
-                echo -e "Please create new container\n"
+                echo -e "${colourStart} \nContainer does not exist\n${colourEnd}"
+                echo -e "${colourStart} Please create new container\n${colourEnd}"
                 exit 1
             fi
-          # End of first pattern: create
           ;;
 
         start)
           # This starts the PSQL container
             docker start jrvs-psql
+            echo -e "${colourStart} \nContainer has been started\n${colourEnd}"
             exit $?
-          # End of second pattern: start
           ;;
 
         stop)
           # This stops the PSQL container
             docker stop jrvs-psql
+            echo -e "${colourStart} \nContainer has stopped\n${colourEnd}"
             exit $?
-          # End of third pattern: stop
           ;;
-        *)
-          # Any invalid arguments will return an exit code
-            echo -e "Invalid argument\n"
-            exit 1
     esac
 
-exit 1
+exit 0
 
 
 
