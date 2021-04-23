@@ -20,9 +20,9 @@
 
     echo -e " -------------------------------------------------------------------\n"
     echo -e "${colourStart} Insert new rows in the <host_info> table by: \n${colourEnd}"
-    echo -e "${italicsStart} ...INSERT INTO host_info (id, hostname, cpu_number, cpu_architecture, cpu_model, cpu_mhz, L2_cache, total_mem, timestamp)\n${colourEnd}"
+    echo -e "${italicsStart} ...INSERT INTO host_info (id, hostname, cpu_number, cpu_architecture, cpu_model, cpu_mhz, L2_cache, total_mem, timestamp) \n${colourEnd}"
     echo -e "${colourStart} Insert new rows in the <host_usage> table by: \n${colourEnd}"
-    echo -e "${italicsStart} ...INSERT INTO host_usage ("timestamp", host_id, memory_free, cpu_idle, cpu_kernel, disk_io, disk_available \n${colourEnd}"
+    echo -e "${italicsStart} ...INSERT INTO host_usage ("timestamp", host_id, memory_free, cpu_idle, cpu_kernel, disk_io, disk_available) \n${colourEnd}"
     echo -e " -------------------------------------------------------------------\n"
 
 -- This table will be used to store all the hardware specifications
