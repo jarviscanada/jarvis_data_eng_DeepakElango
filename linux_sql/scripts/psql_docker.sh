@@ -11,7 +11,7 @@
   colourStart="\e[32m"
   colourEnd="\e[0m"
   options=$1
-  dockerContainer="docker container ls -a -f name=jrvs-psql | wc -l"
+  dockerContainer=$(docker container ls -a -f name=jrvs-psql | wc -l)
 
     # General reminders that will occur at every instance
     echo -e " -------------------------------------------------------------------\n"
