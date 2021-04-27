@@ -6,7 +6,8 @@
 # Version: Feature_Branch_Version_1
 # Description: This script will be used to create, start, and stop an instance of a PSQL Container
 
-  docker pull postgres:13-alpine
+  docker pull postgres:latest
+  #docker pull postgres:13-alpine
   sudo systemctl status docker || systemctl start docker
   colourStart="\e[32m"
   colourEnd="\e[0m"
