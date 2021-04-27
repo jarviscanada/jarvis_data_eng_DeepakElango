@@ -13,10 +13,10 @@
         cpu_number          INT NOT NULL,
         cpu_architecture    VARCHAR NOT NULL,
         cpu_model           VARCHAR NOT NULL,
-        cpu_mhz             INT NOT NULL,
-        L2_cache            INT NOT NULL,           -- in kB
-        L2_cacheTotal_mem   INT NOT NULL,           -- in kB
-        timestamp           INT NOT NULL           -- UTC timezone
+        cpu_mhz             REAL NOT NULL,
+        l2_cache            VARCHAR NOT NULL,       -- in kB
+        totalMem            VARCHAR NOT NULL,       -- in kB
+        timestamp           VARCHAR NOT NULL        -- UTC timezone
     );
 
 -- This table will be used to store all the resource usage data
