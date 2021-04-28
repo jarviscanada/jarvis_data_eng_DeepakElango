@@ -13,21 +13,21 @@
         cpu_number          INT NOT NULL,
         cpu_architecture    VARCHAR NOT NULL,
         cpu_model           VARCHAR NOT NULL,
-        cpu_mhz             INT NOT NULL,
-        L2_cache            INT NOT NULL,           -- in kB
-        L2_cacheTotal_mem   INT NOT NULL,           -- in kB
-        timestamp           INT NOT NULL           -- UTC timezone
+        cpu_mhz             REAL NOT NULL,
+        l2_cache            VARCHAR NOT NULL,          -- in kB
+        totalMem           VARCHAR NOT NULL,          -- in kB
+        timestamp           VARCHAR NOT NULL           -- UTC timezone
     );
 
 -- This table will be used to store all the resource usage data
     CREATE TABLE PUBLIC.host_usage
     (
-        "timestamp"        TIMESTAMP NOT NULL,      -- UTC timezone
+        timestamp          VARCHAR NOT NULL,        -- UTC timezone
         host_id            SERIAL NOT NULL,
         memory_free        INT NOT NULL,            -- in MB
         cpu_idle           INT NOT NULL,            -- in percentage
         cpu_kernel         INT NOT NULL,            -- in percentage
         disk_io            INT NOT NULL,            -- the number of disks in Input/Output
-        disk_available     INT NOT NULL,
+        disk_available     VARCHAR NOT NULL,
         FOREIGN KEY (host_id) REFERENCES host_info (id)
     );
