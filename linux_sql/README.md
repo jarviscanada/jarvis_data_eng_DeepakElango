@@ -50,7 +50,7 @@ Database `host_agent` will contain the following two tables:
 `host_info`:
 
 | id | hostname | cpu_number | cpu_architecture | cpu_model | cpu_mhz | l2_cache | totalmem | timestamp |
-| :---: | :--------: | :----------: | :---------------- :| :---------: |: -------: | :-------- :| :-------- :|: ---------: |
+| :-----: | :--------: | :----------: | :---------------- :| :---------: |: -------: | :-------- :| :-------- :|: ---------: |
 | `Serial`| VARCHAR Unique | INT | VARCHAR | INT | REAL | INT | INT | YYYY-M-D H:M:S |
 
 | | Description|
@@ -68,7 +68,7 @@ Database `host_agent` will contain the following two tables:
 `host_usage`:
 
 | timestamp | host_id | memory_free | cpu_idle | cpu_kernel | disk_io | disk_available | 
-| :---: | :--------: | :----------: | :---------------- :| :---------: |: -------: | :-------- :| 
+| :-----: | :--------: | :----------: | :---------------- :| :---------: |: -------: | :-------- :| 
 | YYYY-M-D H:M:S| `Serial` | INT | INT | INT | INT | INT | 
 
 | | Description|
