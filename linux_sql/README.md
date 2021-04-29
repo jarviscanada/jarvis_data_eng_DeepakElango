@@ -13,7 +13,7 @@ __Technologies:__
 >Git | Docker | Bash Scripts | Linux [CentOS 7] | PostgreSQL | Google Cloud Platform
 
 ## Design Layout
-![my image](/home/centos/dev/jarvis_data_eng_Deepak/linux_sql/assets/LinuxSQL.png)
+![my image](/LinuxSQL.png)
 
 Note:
 - All the nodes will be connected to a network switch.
