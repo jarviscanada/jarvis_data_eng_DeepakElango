@@ -13,7 +13,7 @@ __Technologies:__
 >Git | Docker | Bash Scripts | Linux [CentOS 7] | PostgreSQL | Google Cloud Platform
 
 ## Design Layout
-![my image](/LinuxSQL.png)
+![my image](/assets/LinuxSQL.png)
 
 Note:
 - All the nodes will be connected to a network switch.
