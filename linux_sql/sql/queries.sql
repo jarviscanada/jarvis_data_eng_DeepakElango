@@ -29,6 +29,7 @@
          current_timestamp,
          hostname,
          host_id;
+
 -- Detect host failure: This query will detect host failures if the host_usage table inserts less than 3 data points within a 5 min interval
     SELECT
          host_id,
