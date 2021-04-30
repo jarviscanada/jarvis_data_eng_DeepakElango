@@ -3,14 +3,13 @@
 # Author: Deepak Elango
 # Date: April 27/2021
 # Project: Linux_SQL
-# Version: Feature_Branch_Version_1
+# Version: Feature_Branch_Version_2
 # Description: This script will be used collect computer usage data and then insert the data into the psql instance
 
       psql_host=$1
       psql_port=$2
       db_name=$3
       psql_user=$4
-      #hostname='hostname'
 
       date=$(date +%Y-%m-%d)
       time=$(date +" %H:%M:%S")
@@ -28,4 +27,4 @@
       # Executing the insert command through PSQL CLI
       psql -h $psql_host -p $psql_port -d $db_name -U $psql_user -c "$host_usage_query"
       exit 0
-      #bash host_info.sh "localhost" 5432 "host_agent" "postgres" "mypassword"
+      #bash host_usage.sh "localhost" 5432 "host_agent" "postgres" "mypassword"

@@ -1,7 +1,7 @@
 -- Author: Deepak Elango
 -- Date: April 23/2021
 -- Project: Linux_SQL
--- Version: Feature_Branch_Version_1
+-- Version: Feature_Branch_Version_2
 -- Description: This script will be used to create two tables that will host all hardware specifications and resource usage data
 --              for data analytics purposes
 
@@ -15,7 +15,7 @@
         cpu_model           VARCHAR NOT NULL,
         cpu_mhz             REAL NOT NULL,
         l2_cache            VARCHAR NOT NULL,          -- in kB
-        totalMem           VARCHAR NOT NULL,          -- in kB
+        totalMem            INT NOT NULL,              -- in kB
         timestamp           VARCHAR NOT NULL           -- UTC timezone
     );
 
