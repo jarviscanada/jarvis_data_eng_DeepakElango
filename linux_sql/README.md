@@ -13,7 +13,7 @@ __Technologies:__
 >Git | Docker | Bash Scripts | Linux [CentOS 7] | PostgreSQL | Google Cloud Platform
 
 ## Design Layout
-![my image](jarviscanada/jarvis_data_eng_DeepakElango/blob/develop/linux_sql/assets/LinuxSQL.png)
+![my image](./assets/LinuxSQL.png)
 
 Note:
 - All the nodes will be connected to a network switch.
@@ -107,7 +107,7 @@ increasing total memory capacity for example, the change would not be reflected 
 database. A potential solution would be to find a way run the script every month automatically.
   
 - If there are any technical error in the parent node that hosts the database, a backup storage
-feature would be helpful so that data would not be lost.
+feature would be helpful so that the data would not be lost.
   
 - With `host_usage.sh` running every minute, storage would soon become a problem if the 
 product was left on for too long. A potential solution could involve analyzing and summarizing
