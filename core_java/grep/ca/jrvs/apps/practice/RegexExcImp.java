@@ -16,4 +16,14 @@ public class RegexExcImp implements RegexExc {
     public boolean isEmptyLine(String line) {
         return line.matches("^\\s*$");
     }
+    
+    public static void main(String[] args) {
+        String ipExample = "8.8.8.8";
+        String imgFilename = "abc.jpeg";
+        String emptyLine = " \n";
+        RegexExcImp instance = new RegexExcImp();
+        instance.matchIp(ipExample);
+        instance.matchJpeg(imgFilename);
+        instance.isEmptyLine(emptyLine);
+    }
 }
