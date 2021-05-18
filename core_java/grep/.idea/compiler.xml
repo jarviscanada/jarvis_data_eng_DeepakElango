@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="CompilerConfiguration">
-    <bytecodeTargetLevel>
-      <module name="core_java" target="1.5" />
-      <module name="HelloWorld" target="8" />
-    </bytecodeTargetLevel>
-  </component>
-</project>
