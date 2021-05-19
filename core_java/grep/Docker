@@ -1,0 +1,6 @@
+FROM openjdk:8-alpine
+COPY target/java*.jar /Users/apple/Desktop/PP/src/main/java
+ENTRYPOINT ["java","-jar","/Users/apple/Desktop/PP/src/main/java.jar"]
+
+// Due to various technical errors in maven in relation to missing dependencies and libraries, a maven package
+// could not be created and deployed using docker build image
