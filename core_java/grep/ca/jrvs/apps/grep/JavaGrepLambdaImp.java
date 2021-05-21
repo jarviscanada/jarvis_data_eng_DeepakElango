@@ -25,6 +25,14 @@ public class JavaGrepLambdaImp extends JavaGrepImp {
       ex.printStackTrace();
     }
   }
+  
+  @Override
+    public void process() throws IOException {
+        List<String> lines = new ArrayList<>();
+        lines = listFiles(getRootPath()).stream().filter(x -> containsPattern(x)).collect(Collectors.toList())
+        writeToFile(lines);
+    }
+  
   // The following will be implemented using Lambda and Steam API's
   /**
    * Traverse a given directory and return all files
