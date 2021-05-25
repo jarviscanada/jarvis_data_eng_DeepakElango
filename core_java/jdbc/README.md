@@ -26,4 +26,3 @@ its more useful in situations where there are large amounts of classes utilizing
 ## <ins> Test 
 I tested the application using sample data in the customer and orders table, and performed some sample 
 queries to test if the application is working.
-
