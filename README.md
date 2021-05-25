@@ -21,7 +21,7 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_DeepakElan
       
   - Twitter App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam.
   - JDBC App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam.
-  - Grep App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam.
+  - Grep App: 
 
 **Springboot App** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_DeepakElango/tree/master/springboot)]: Not Started
 
