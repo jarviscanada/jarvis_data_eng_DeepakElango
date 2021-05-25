@@ -4,11 +4,11 @@ Electrical Engineering had taught me that even the most complicated problems cou
 
 ## Skills
 
-**Proficient:** Java, Linux/Bash, RDBMS/SQL, Agile/Scrum, Git/GitHub
+**Proficient:** Java, Linux/Bash, RDBMS/SQL, Agile/Scrum, Git/GitHub, Maven
 
-**Competent:** Donec, fermentum, Donec, fermentum, Donec
+**Competent:** Google Cloud Platform, HTML/CSS/PHP/Javascript, Matlab, C, C++, Data Structures/Algorithms
 
-**Familiar:** Donec, fermentum, fermentum, fermentum, fermentum
+**Familiar:** Python, Verilog, Assembly, Operating Systems, Andriod Developement
 
 ## Jarvis Projects
 
@@ -19,9 +19,9 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_DeepakElan
 
 **Core Java Apps** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_DeepakElango/tree/master/core_java)]:
       
-  - Twitter App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam.
-  - JDBC App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam.
-  - Grep App: 
+  - Twitter App: 
+  - JDBC App: Constructed the JDBC application to perform CRUD operations using DAO and DTO design patterns on a PostgreSQL retail store's database. 
+  - Grep App: Created the Java Grep Application which is an implementation of the Linux Grep command which search for a string of characters in a given directory and ouputs them to another file. The application was created with Java SE 8 Lambda/Steam API's with Apache Maven and deployed using Docker.
 
 **Springboot App** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_DeepakElango/tree/master/springboot)]: Not Started
 
@@ -35,25 +35,22 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_DeepakElan
 
 
 ## Highlighted Projects
-**Web app for resturant** [[GitHub](https://github.com/jarviscanada/jarvis_profile_builder)]: Suspendisse a tincidunt odio. Suspendisse posuere luctus aliquet. Quisque magna tellus, tempor vitae arcu sed, volutpat scelerisque lacus. Aliquam varius pulvinar dapibus. Ut a tincidunt sem. Aenean sollicitudin fringilla erat ut imperdiet. Phasellus fermentum, enim vitae laoreet elementum, eros nisl hendrerit lorem.
+**Web app for restaurant** [[GitHub](https://github.com/jarviscanada/jarvis_profile_builder)]: Suspendisse a tincidunt odio. Suspendisse posuere luctus aliquet. Quisque magna tellus, tempor vitae arcu sed, volutpat scelerisque lacus. Aliquam varius pulvinar dapibus. Ut a tincidunt sem. Aenean sollicitudin fringilla erat ut imperdiet. Phasellus fermentum, enim vitae laoreet elementum, eros nisl hendrerit lorem.
 
 **Machine Learning**: Suspendisse a tincidunt odio. Suspendisse posuere luctus aliquet. Quisque magna tellus, tempor vitae arcu sed, volutpat scelerisque lacus. Aliquam varius pulvinar dapibus. Ut a tincidunt sem. Aenean sollicitudin fringilla erat ut imperdiet. Phasellus fermentum, enim vitae laoreet elementum, eros nisl hendrerit lorem.
 
 
 ## Professional Experiences
 
-**Software Developer, Jarvis (2020-present)**: Donec mattis sed justo et sagittis. Vestibulum lacinia nulla ipsum. Curabitur imperdiet nibh vitae leo lacinia laoreet. Nullam accumsan, lectus ut maximus ultricies, augue justo egestas mi, vel bibendum felis.
+**Software Developer, Jarvis (2020-present)**: Gained fundamental skills in Communication | Adaptability | Patience | Responsibility | Confidence
 
-**Tutor, XYZ Company (2019)**: Donec mattis sed justo et sagittis. Vestibulum lacinia nulla ipsum. Curabitur imperdiet nibh vitae leo lacinia laoreet. Nullam accumsan, lectus ut maximus ultricies, augue justo egestas mi, vel bibendum felis.
+**Public Relations Sector, (various positions) (12+ years)**:  Various companies *[Carleton Athletics, City of Toronto, Sick Kids/Sunnybrook Hospital, Toronto Corporation and Condominiums, Teleperformance, Food Sector [ Pizza Pizza | Eggsmart ], Private Tutor].* Gained fundamental skills in Communication | Adaptability | Patience | Responsibility | Confidence
 
 
 ## Education
-**XYZ university (2012-2016)**, Bachelor of Applied Sciences, Electrical and Computer Engineering
-- Scholarship
-- Dean's List (2015, 2016): Ut enim ad minim veniam
-- GPA: 3.8/4.0
-
-**XYZ university (2016-2018)**, Master of Engineering, Electrical and Computer Engineering
+**Carleton University (2016-2021)**, Bachelor of Engineering, Electrical and Computer Engineering
+- Carleton University Entrance Scholarship
+- Sprott Foundation Scholarship Recipient [2017/2020]
 
 
 ## Miscellaneous

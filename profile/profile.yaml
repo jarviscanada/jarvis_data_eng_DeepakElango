@@ -23,20 +23,22 @@ skills:
     - RDBMS/SQL
     - Agile/Scrum
     - Git/GitHub
+    - Maven
   # At least 5 skills
   competent:
-    - Donec
-    - fermentum
-    - Donec
-    - fermentum
-    - Donec
+    - Google Cloud Platform
+    - HTML/CSS/PHP/Javascript
+    - Matlab
+    - C
+    - C++
+    - Data Structures/Algorithms
   # At least 5 skills
   familiar:
-    - Donec
-    - fermentum
-    - fermentum
-    - fermentum
-    - fermentum
+    - Python
+    - Verilog
+    - Assembly
+    - Operating Systems
+    - Andriod Developement
 
 # List of Jarvis projects
 jarvis_projects:
@@ -51,9 +53,9 @@ jarvis_projects:
   - name: "Core Java Apps"
     git_url: "/core_java"
     description:
-      - "Twitter App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam."
-      - "JDBC App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam."
-      - "Grep App: "
+      - "Twitter App: "
+      - "JDBC App: Constructed the JDBC application to perform CRUD operations using DAO and DTO design patterns on a PostgreSQL retail store's database. "
+      - "Grep App: Created the Java Grep Application which is an implementation of the Linux Grep command which search for a string of characters in a given directory and ouputs them to another file. The application was created with Java SE 8 Lambda/Steam API's with Apache Maven and deployed using Docker."
   - name: "Springboot App"
     git_url: "/springboot"
     description: ""
@@ -74,7 +76,7 @@ jarvis_projects:
 # Feel free to add more projects
 highlighted_projects:
   #project name
-  - name: "Web app for resturant"
+  - name: "Web app for restaurant"
     #URL is optional
     git_url: "https://github.com/jarviscanada/jarvis_profile_builder"
     # The project description must start with an action verb (https://bit.ly/3guO98u)
@@ -92,28 +94,22 @@ professional_experience:
     company: "Jarvis"
     duration: "2020-present"
     # The project description must start with an action verb (https://bit.ly/3guO98u)
-    description: "Donec mattis sed justo et sagittis. Vestibulum lacinia nulla ipsum. Curabitur imperdiet nibh vitae leo lacinia laoreet. Nullam accumsan, lectus ut maximus ultricies, augue justo egestas mi, vel bibendum felis."
-  - title: "Tutor"
-    company: "XYZ Company"
-    duration: "2019"
-    description: "Donec mattis sed justo et sagittis. Vestibulum lacinia nulla ipsum. Curabitur imperdiet nibh vitae leo lacinia laoreet. Nullam accumsan, lectus ut maximus ultricies, augue justo egestas mi, vel bibendum felis."
+    description: "Gained fundamental skills in Communication | Adaptability | Patience | Responsibility | Confidence"
+  - title: "Public Relations Sector"
+    company: "(various positions)"
+    duration: "12+ years"
+    description: " Various companies *[Carleton Athletics, City of Toronto, Sick Kids/Sunnybrook Hospital, Toronto Corporation and Condominiums, Teleperformance, Food Sector [ Pizza Pizza | Eggsmart ], Private Tutor].* Gained fundamental skills in Communication | Adaptability | Patience | Responsibility | Confidence"
 
 #List of edcuation
 education:
-  - school_name: "XYZ university"
-    duration: "2012-2016"
-    degree: "Bachelor of Applied Sciences"
+  - school_name: "Carleton University"
+    duration: "2016-2021"
+    degree: "Bachelor of Engineering"
     department: "Electrical and Computer Engineering"
     # optional
     awards_achievements:
-      - "Scholarship"
-      - "Dean's List (2015, 2016): Ut enim ad minim veniam"
-      - "GPA: 3.8/4.0"
-  - school_name: "XYZ university"
-    duration: "2016-2018"
-    degree: "Master of Engineering"
-    department: "Electrical and Computer Engineering"
-    awards_achievements:
+      - "Carleton University Entrance Scholarship"
+      - "Sprott Foundation Scholarship Recipient [2017/2020]"
 
 #Optional section
 others:
