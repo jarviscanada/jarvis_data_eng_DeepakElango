@@ -23,6 +23,16 @@ public class TwitterHttpHelper implements HttpHelper {
         httpClient = new DefaultHttpClient();
     }
 
+    public static void main(String[] args) throws URISyntaxException, OAuthMessageSignerException, OAuthExpectationFailedException, IOException, OAuthCommunicationException {
+        String consumerKey = "Sm8X6bFzTwIl9ZWG1KfaRk98M";
+        String consumerSecret = "mrPeOutTETb9YSN6t9p6w7lNqwOahKlKD3pCVFtE7HgeosFJrD";
+        String accessToken = "1390311863884333056-egIfg3RZCs1iJZwCV0jY8uwVADsI1f";
+        String tokenSecret = "dWuuWGxMFqHHGeityhEn1NGULFkuuhUxZf6qQhF8NGiOn";
+
+        HttpHelper newHelper = new TwitterHttpHelper(consumerKey, consumerSecret, accessToken, tokenSecret);
+        HttpPost postRequest = (HttpPost) newHelper.httpPost(new URI("https://api.twitter.com/1.1/statuses/update.json?status=Hello World from Java App"));
+    }
+
     /**
      * /**
      * Execute a HTTP Post call
