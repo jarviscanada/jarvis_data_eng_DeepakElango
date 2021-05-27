@@ -16,6 +16,10 @@ public class TwitterHttpHelperTest {
     @Before
     public void setUp() throws Exception {
        // Insert key info
+        String consumerKey = null;
+        String consumerSecret = null;
+        String accessToken = null;
+        String tokenSecret = null;
         this.twitterHttpHelper = new TwitterHttpHelper( consumerKey, consumerSecret, accessToken, tokenSecret);
     }
 
