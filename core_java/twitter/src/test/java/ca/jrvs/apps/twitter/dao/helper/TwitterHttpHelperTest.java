@@ -15,11 +15,7 @@ public class TwitterHttpHelperTest {
 
     @Before
     public void setUp() throws Exception {
-        String consumerKey = "Sm8X6bFzTwIl9ZWG1KfaRk98M";
-        String consumerSecret = "mrPeOutTETb9YSN6t9p6w7lNqwOahKlKD3pCVFtE7HgeosFJrD";
-        String accessToken = "1390311863884333056-egIfg3RZCs1iJZwCV0jY8uwVADsI1f";
-        String tokenSecret = "dWuuWGxMFqHHGeityhEn1NGULFkuuhUxZf6qQhF8NGiOn";
-
+       // Insert key info
         this.twitterHttpHelper = new TwitterHttpHelper( consumerKey, consumerSecret, accessToken, tokenSecret);
     }
 
