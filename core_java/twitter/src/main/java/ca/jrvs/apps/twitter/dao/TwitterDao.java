@@ -2,7 +2,15 @@ package ca.jrvs.apps.twitter.dao;
 
 import ca.jrvs.apps.twitter.dao.helper.*;
 import ca.jrvs.apps.twitter.model.*;
+import ca.jrvs.apps.twitter.example.JsonParser;
+import com.fasterxml.jackson.core.*;
+import com.google.gdata.util.common.base.*;
+import oauth.signpost.exception.*;
+import org.apache.http.*;
+import org.apache.http.util.*;
 import org.springframework.beans.factory.annotation.*;
+import java.io.*;
+import java.net.*;
 
 public class TwitterDao implements CrdDao<Tweet, String> {
 
@@ -19,7 +27,7 @@ public class TwitterDao implements CrdDao<Tweet, String> {
     //Response code
     private static final int HTTP_OK = 200;
 
-    private HttpHelper httpHelper;
+    private final HttpHelper httpHelper;
 
     @Autowired
     public TwitterDao(HttpHelper httpHelper) {
@@ -33,8 +41,13 @@ public class TwitterDao implements CrdDao<Tweet, String> {
      * @return created entity
      */
     @Override
-    public Tweet create(Tweet entity) {
-        return null;
+    public Tweet create(Tweet entity) throws OAuthMessageSignerException, OAuthExpectationFailedException, IOException, OAuthCommunicationException, URISyntaxException {
+        PercentEscaper percentEscaper = new PercentEscaper("", false);
+        URI uri = new URI(API_BASE_URI + POST_PATH + QUERY_SYM + "status" + EQUAL + percentEscaper
+                .escape(entity.getText()) + AMPERSAND + "long" + EQUAL + entity.getCoordinates()
+                .getCoordinates().get(0) + AMPERSAND + "lat" + EQUAL + entity.getCoordinates()
+                .getCoordinates().get(1));
+        return validateBody(httpHelper.httpPost(uri));
     }
 
     /**
@@ -44,8 +57,10 @@ public class TwitterDao implements CrdDao<Tweet, String> {
      * @return Tweet entity
      */
     @Override
-    public Tweet findById(String s) {
-        return null;
+    public Tweet findById(String s) throws OAuthMessageSignerException, OAuthExpectationFailedException, IOException, OAuthCommunicationException, URISyntaxException {
+        PercentEscaper percentEscaper = new PercentEscaper("", false);
+        URI uri = new URI(API_BASE_URI + SHOW_PATH + QUERY_SYM + "id" + EQUAL + s);
+        return validateBody(httpHelper.httpPost(uri));
     }
 
     /**
@@ -55,7 +70,44 @@ public class TwitterDao implements CrdDao<Tweet, String> {
      * @return deleted entity
      */
     @Override
-    public Tweet deleteById(String s) {
-        return null;
+    public Tweet deleteById(String s) throws OAuthMessageSignerException, OAuthExpectationFailedException, IOException, OAuthCommunicationException, URISyntaxException {
+        PercentEscaper percentEscaper = new PercentEscaper("", false);
+        URI uri = new URI(API_BASE_URI + DELETE_PATH + "/" + s + ".json");
+        return validateBody(httpHelper.httpPost(uri));
+    }
+
+    private Tweet validateBody(HttpResponse response) {
+        Tweet tweet = null;
+
+        int status = response.getStatusLine().getStatusCode();
+        if (status != TwitterDao.HTTP_OK) {
+            try {
+                System.out.println(EntityUtils.toString(response.getEntity()));
+            } catch (IOException e) {
+                System.out.println(("Response has no entity"));
+            }
+            throw new RuntimeException("unexpected HTTP status:" + status);
+        }
+
+        if (response.getEntity() == null) {
+            throw new RuntimeException("Empty response body");
+        }
+
+        //convert response entity to str
+        String jsonStr;
+        try {
+            jsonStr = EntityUtils.toString(response.getEntity());
+        } catch (IOException e) {
+            throw new RuntimeException("Failed to convert entity to string", e);
+        }
+
+        //Convert JSON string to Tweet object
+        try {
+            tweet = JsonParser.toObjectFromJson(jsonStr, Tweet.class);
+            System.out.println(tweet);
+        } catch (IOException e) {
+            throw new RuntimeException("Unable to convert Json str to object", e);
+        }
+        return tweet;
     }
 }
