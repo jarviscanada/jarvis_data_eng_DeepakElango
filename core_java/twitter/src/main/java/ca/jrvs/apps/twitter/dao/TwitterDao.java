@@ -53,26 +53,26 @@ public class TwitterDao implements CrdDao<Tweet, String> {
     /**
      * Find an entity(Tweet) by its id
      *
-     * @param s entity id
+     * @param id entity id
      * @return Tweet entity
      */
     @Override
-    public Tweet findById(String s) throws OAuthMessageSignerException, OAuthExpectationFailedException, IOException, OAuthCommunicationException, URISyntaxException {
+    public Tweet findById(String id) throws OAuthMessageSignerException, OAuthExpectationFailedException, IOException, OAuthCommunicationException, URISyntaxException {
         PercentEscaper percentEscaper = new PercentEscaper("", false);
-        URI uri = new URI(API_BASE_URI + SHOW_PATH + QUERY_SYM + "id" + EQUAL + s);
+        URI uri = new URI(API_BASE_URI + SHOW_PATH + QUERY_SYM + "id" + EQUAL + id);
         return validateBody(httpHelper.httpPost(uri));
     }
 
     /**
      * Delete an entity(Tweet) by its ID
      *
-     * @param s of the entity to be deleted
+     * @param del of the entity to be deleted
      * @return deleted entity
      */
     @Override
-    public Tweet deleteById(String s) throws OAuthMessageSignerException, OAuthExpectationFailedException, IOException, OAuthCommunicationException, URISyntaxException {
+    public Tweet deleteById(String del) throws OAuthMessageSignerException, OAuthExpectationFailedException, IOException, OAuthCommunicationException, URISyntaxException {
         PercentEscaper percentEscaper = new PercentEscaper("", false);
-        URI uri = new URI(API_BASE_URI + DELETE_PATH + "/" + s + ".json");
+        URI uri = new URI(API_BASE_URI + DELETE_PATH + "/" + del + ".json");
         return validateBody(httpHelper.httpPost(uri));
     }
 
