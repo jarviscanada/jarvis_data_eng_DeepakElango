@@ -42,7 +42,7 @@ public class TwitterServiceUnitTest {
         assertEquals(lon, test.getCoordinates().getCoordinates().get(0));
         assertEquals(lat, test.getCoordinates().getCoordinates().get(1));
         when(dao.findById(any())).thenReturn(new Tweet());
-        service.showTweet(test.getId_str(), null);
+        //service.showTweet(test.getId_str(), null);
     }
 
     @Test
