@@ -1,5 +1,6 @@
 package ca.jrvs.apps.twitter.service;
 
+import ca.jrvs.apps.twitter.controller.*;
 import ca.jrvs.apps.twitter.dao.*;
 import ca.jrvs.apps.twitter.dao.helper.*;
 import ca.jrvs.apps.twitter.model.*;
@@ -8,7 +9,6 @@ import org.junit.*;
 
 import java.io.*;
 import java.net.*;
-import java.util.*;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;

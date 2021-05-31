@@ -1,9 +1,11 @@
 package ca.jrvs.apps.twitter.controller;
 
+import ca.jrvs.apps.twitter.dao.helper.*;
 import ca.jrvs.apps.twitter.example.*;
 import ca.jrvs.apps.twitter.model.*;
 import ca.jrvs.apps.twitter.service.*;
 import oauth.signpost.exception.*;
+import org.apache.http.*;
 import org.springframework.beans.factory.annotation.*;
 
 import java.io.*;
@@ -23,6 +25,17 @@ public class TwitterController implements Controller {
     @Autowired
     public TwitterController(Service service) {
         this.service = service;
+    }
+
+    public static void main(String[] args) throws URISyntaxException, OAuthMessageSignerException, OAuthExpectationFailedException, IOException, OAuthCommunicationException {
+        // Insert key info
+        String consumerKey = null;
+        String consumerSecret = null;
+        String accessToken = null;
+        String tokenSecret = null;
+
+        HttpHelper newHelper = new TwitterHttpHelper(consumerKey, consumerSecret, accessToken, tokenSecret);
+        HttpResponse response = newHelper.httpPost(new URI("https://api.twitter.com/1.1/statuses/update.json?status=Hello_World_from_Java_App_2"));
     }
 
     /**
