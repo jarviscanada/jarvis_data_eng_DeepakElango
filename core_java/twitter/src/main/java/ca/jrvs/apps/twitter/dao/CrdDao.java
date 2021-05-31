@@ -19,12 +19,12 @@ public interface CrdDao<T, ID> {
      * @param id entity id
      * @return Tweet entity
      */
-    T findById(ID id) throws OAuthMessageSignerException, OAuthExpectationFailedException, IOException, OAuthCommunicationException, URISyntaxException;
+    T findById(String id) throws OAuthMessageSignerException, OAuthExpectationFailedException, IOException, OAuthCommunicationException, URISyntaxException;
 
     /**
      * Delete an entity(Tweet) by its ID
      * @param id of the entity to be deleted
      * @return deleted entity
      */
-    T deleteById(ID id) throws OAuthMessageSignerException, OAuthExpectationFailedException, IOException, OAuthCommunicationException, URISyntaxException;
+    T deleteById(String[] id) throws OAuthMessageSignerException, OAuthExpectationFailedException, IOException, OAuthCommunicationException, URISyntaxException;
 }

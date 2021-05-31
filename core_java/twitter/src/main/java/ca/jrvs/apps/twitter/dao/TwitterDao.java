@@ -3,7 +3,6 @@ package ca.jrvs.apps.twitter.dao;
 import ca.jrvs.apps.twitter.dao.helper.*;
 import ca.jrvs.apps.twitter.model.*;
 import ca.jrvs.apps.twitter.example.JsonParser;
-import com.fasterxml.jackson.core.*;
 import com.google.gdata.util.common.base.*;
 import oauth.signpost.exception.*;
 import org.apache.http.*;
@@ -70,7 +69,7 @@ public class TwitterDao implements CrdDao<Tweet, String> {
      * @return deleted entity
      */
     @Override
-    public Tweet deleteById(String del) throws OAuthMessageSignerException, OAuthExpectationFailedException, IOException, OAuthCommunicationException, URISyntaxException {
+    public Tweet deleteById(String[] del) throws OAuthMessageSignerException, OAuthExpectationFailedException, IOException, OAuthCommunicationException, URISyntaxException {
         PercentEscaper percentEscaper = new PercentEscaper("", false);
         URI uri = new URI(API_BASE_URI + DELETE_PATH + "/" + del + ".json");
         return validateBody(httpHelper.httpPost(uri));
