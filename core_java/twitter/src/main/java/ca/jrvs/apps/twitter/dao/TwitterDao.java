@@ -76,7 +76,7 @@ public class TwitterDao implements CrdDao<Tweet, String> {
         return validateBody(httpHelper.httpPost(uri));
     }
 
-    private Tweet validateBody(HttpResponse response) {
+    public Tweet validateBody(HttpResponse response) {
         Tweet tweet = null;
 
         int status = response.getStatusLine().getStatusCode();
