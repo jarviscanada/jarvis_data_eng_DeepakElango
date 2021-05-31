@@ -4,8 +4,6 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import java.awt.*;
-
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
         "created_at",
@@ -64,7 +62,7 @@ public class Tweet {
     }
 
     @JsonProperty("id_str")
-    public String getId_str() {
+    public String[] getId_str() {
         return id_str;
     }
 
