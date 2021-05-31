@@ -1,6 +1,8 @@
 package ca.jrvs.apps.twitter.controller;
 
 //import ca.jrvs.apps.twitter.model.Tweet;
+import ca.jrvs.apps.twitter.model.*;
+
 import java.util.List;
 
 public interface Controller {
