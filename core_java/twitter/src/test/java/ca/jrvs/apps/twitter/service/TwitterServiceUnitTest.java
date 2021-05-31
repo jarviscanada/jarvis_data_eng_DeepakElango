@@ -1,42 +1,38 @@
 package ca.jrvs.apps.twitter.service;
 
 import ca.jrvs.apps.twitter.dao.*;
-import ca.jrvs.apps.twitter.dao.helper.*;
+import ca.jrvs.apps.twitter.example.*;
 import ca.jrvs.apps.twitter.model.*;
 import oauth.signpost.exception.*;
 import org.junit.*;
+import org.junit.runner.*;
+import org.mockito.*;
+import org.mockito.junit.*;
 
 import java.io.*;
 import java.net.*;
-import java.util.*;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.*;
+import static org.mockito.Mockito.when;
 
-public class TwitterServiceIntTest {
+@RunWith(MockitoJUnitRunner.class)
+public class TwitterServiceUnitTest {
 
-    private TwitterService twitterService;
-    private Tweet test;
+    @Mock
+    CrdDao dao;
 
-    @Before
-    public void setUp() throws Exception {
-        // Insert key info
-        String consumerKey = null;
-        String consumerSecret = null;
-        String accessToken = null;
-        String tokenSecret = null;
-        HttpHelper httpHelper = new TwitterHttpHelper(consumerKey, consumerSecret, accessToken, tokenSecret);
-        CrdDao<Tweet, String> twitterDao = new TwitterDao(httpHelper);
-        twitterService = new TwitterService(twitterDao);
-    }
+    @InjectMocks
+    TwitterService service;
+    Tweet test = new Tweet();
 
     @Test
-    public void postTweet() {
+    public void postTweet() throws OAuthMessageSignerException, OAuthExpectationFailedException, IOException, URISyntaxException, OAuthCommunicationException {
         Double lat = 1d;
         Double lon = -1d;
-        assertNotNull(test);
         assertEquals(lon, test.getCoordinates().getCoordinates().get(0));
         assertEquals(lat, test.getCoordinates().getCoordinates().get(1));
+        when(dao.create(any())).thenReturn(new Tweet());
+        service.postTweet(TweetUtil.tweetUtil("test", 1d, -1d));
     }
 
     @Test
@@ -45,8 +41,8 @@ public class TwitterServiceIntTest {
         Double lon = -1d;
         assertEquals(lon, test.getCoordinates().getCoordinates().get(0));
         assertEquals(lat, test.getCoordinates().getCoordinates().get(1));
-       // twitterService.showTweet(test.getId_str(),null);
-        assertNotNull(twitterService);
+        when(dao.findById(any())).thenReturn(new Tweet());
+        service.showTweet(test.getId_str(), null);
     }
 
     @Test
@@ -55,8 +51,7 @@ public class TwitterServiceIntTest {
         Double lon = -1d;
         assertEquals(lon, test.getCoordinates().getCoordinates().get(0));
         assertEquals(lat, test.getCoordinates().getCoordinates().get(1));
-       // String[] ids = {test.getId_str()};
-        //List<Tweet> tests = twitterService.deleteTweets(ids);
-        //assertEquals(tests.get(0), test);
+        when(dao.deleteById(any())).thenReturn(new Tweet());
+        service.deleteTweets(test.getId_str());
     }
 }
