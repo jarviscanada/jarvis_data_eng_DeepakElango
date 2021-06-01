@@ -66,7 +66,7 @@ deelango/twittercli delete id_of_tweet
 
 ## <ins> Model
 The following diagram will illustrate the `Tweet` model and its dependencies 
-[`Coordinates`, `Entities`, `Hashtag`, and `UserMention`]
+[`Coordinates`, `Entities`, `Hashtags`, and `UserMentions`]
 
 ![my image](./assets/twitterclimodel.png)
 
