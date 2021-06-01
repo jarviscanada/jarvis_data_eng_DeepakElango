@@ -7,11 +7,11 @@ Libraries such as `HTTP` and `OAuth 1.0` were used to send/receive/authenticate
 requests using the Twitter Rest APIs. The Jackson library was used to convert JSON 
 objects to Tweet objects. Moreover, Apache Maven was used to handle project 
 dependencies, testing was done using `JUnit4` and `Mockito`, and the app was deployed 
-using Docker.
+using Docker
 
 __Targeted User:__ The product can be used by anyone who would like
 to post | show | delete a tweet using command line interface. It 
-will be especially useful for people who post regularly on Twitter.
+will be especially useful for people who post regularly on Twitter
 
 __Technologies:__
 > <span style = "color:green"> Git | Docker | Java SE 8 | Apache Maven | Twitter Rest API </span>
@@ -68,8 +68,38 @@ deelango/twittercli delete id_of_tweet
 ![my image](./assets/twittercli.png)
 
 #### Description of the components
+The application consists of four major components:
+
+- `TwitterCLIApp`: 
+   When the user communicates with the command line, this script is
+   responsible for calling the Post | Show | Delete methods in 
+  `TwitterController`. In addition, this script is also responsible for 
+   creating an instance of`TwitterController`, `TwitterDao`, `TwitterHttpHelper`,
+   and`TwitterService`
 
 
+- `TwitterController`:
+   The data that is sent from the `TwitterCLIApp` will be 
+   validated to see if its in an acceptable format before sending it over
+   to `TwitterService` where it will be parsed for logic errors. The 
+   final result will be then sent back to `TwitterCLIApp` where it will
+   be outputted to the user
+  
+
+- `TwitterService`:
+  This class is responsible for analyzing the data with respect to 
+  the Business logic that was established before development. 
+  Only if the data passes the validation, it is sent to
+  `TwitterDao` where it will communicate with Twitter
+
+ 
+- `TwitterDao`:
+  The data access layer is responsible for handling the models to initiate 
+  communication with the Twitter's servers. It does this with the help
+  of its `TwitterHttpHelper` class as well as by constructing 
+  the URI for request calls
+
+  
 ## <ins> Model
 The following diagram will illustrate the `Tweet` model and its dependencies 
 [`Coordinates`, `Entities`, `Hashtags`, and `UserMentions`]
@@ -78,7 +108,11 @@ The following diagram will illustrate the `Tweet` model and its dependencies
 
 ## <ins> Spring
 
+
+
 ## <ins> Test
-Testing for each module was done using `Junit4` and `Mockito`.
+Testing for each module was done using `Junit4` and `Mockito`. For each
+component an integration and unit test was performed to see if
+it does what it is supposed to do
 
 ## <ins> Improvements
