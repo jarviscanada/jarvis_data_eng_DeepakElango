@@ -1,6 +1,5 @@
 package ca.jrvs.apps.twitter;
 
-import ca.jrvs.apps.twitter.controller.Controller;
 import ca.jrvs.apps.twitter.controller.TwitterController;
 import ca.jrvs.apps.twitter.dao.CrdDao;
 import ca.jrvs.apps.twitter.dao.TwitterDao;
@@ -23,10 +22,10 @@ public class TwitterCLIApp {
 
     public static final String USAGE = "USAGE: TwitterCLI post|show|delete [options]";
 
-    private Controller controller;
+    private final TwitterController controller;
 
     @Autowired
-    public TwitterCLIApp(Controller controller) {
+    public TwitterCLIApp(TwitterController controller) {
         this.controller = controller;
     }
 
@@ -36,9 +35,9 @@ public class TwitterCLIApp {
         String accessToken = System.getenv("accessToken");
         String tokenSecret = System.getenv("tokenSecret");
         HttpHelper helper = new TwitterHttpHelper(consumerKey, consumerSecret, accessToken, tokenSecret);
-        CrdDao dao = new TwitterDao(helper);
+        CrdDao<Tweet, String> dao = new TwitterDao(helper);
         Service service = new TwitterService(dao);
-        Controller controller = new TwitterController(service);
+        TwitterController controller = new TwitterController(service);
         TwitterCLIApp app = new TwitterCLIApp(controller);
         app.run(args);
     }
