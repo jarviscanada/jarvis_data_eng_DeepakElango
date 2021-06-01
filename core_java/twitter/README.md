@@ -104,9 +104,23 @@ The application consists of four major components:
 The following diagram will illustrate the `Tweet` model and its dependencies 
 [`Coordinates`, `Entities`, `Hashtags`, and `UserMentions`]
 
-![my image](./assets/twitterclimodel.png)
+![my image1](./assets/twitterclimodel.png)
 
 ## <ins> Spring
+The biggest challenge in the project had to do with dependency management.
+With each class having its own dependencies, it can become rather inefficient
+to create each component and set up their dependencies manually. 
+
+
+I opted to go with the Spring Framework so that all the dependencies can
+be managed by the concept of Inversion of Control (IOC). The main classes 
+were annotated `@Component` <span style = "color:blue">[TwitterHttpHelper] [TwitterCLIApp], 
+`@Controller` [TwitterController],`@Service` [TwitterService],
+</span> and <span style = "color:blue">`@Repository` [TwitterDao] </span> as well as  placing `@Autowire` before 
+all the constructors to indicate that the class is a `Bean` and to notify
+the IoC container to inject any dependencies through the constructor.
+
+
 
 
 
