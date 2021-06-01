@@ -25,7 +25,6 @@ public class TwitterHttpHelper implements HttpHelper {
     }
 
     public static void main(String[] args) throws URISyntaxException, OAuthMessageSignerException, OAuthExpectationFailedException, IOException, OAuthCommunicationException {
-        // Insert key info
         String consumerKey = System.getenv("consumerKey");
         String consumerSecret = System.getenv("consumerSecret");
         String accessToken = System.getenv("accessToken");
