@@ -125,7 +125,15 @@ process of finding the `Beans` and injecting the dependencies into the IOC conta
 
 ## <ins> Deployment
 The `Twitter CLI Application` was deployed using Docker to Docker Hub using the following steps:
+#### Build the package
+>mvn clean package
 
+#### Build the image
+>docker build username/nameOfApplication 
+
+#### Push the built image to Docker Hub
+> docker push username/nameOfApplication
+ 
 
 ## <ins> Test
 
@@ -133,3 +141,8 @@ Testing for each module was done using `Junit4` and `Mockito`. For each componen
 performed to see if it does what it is supposed to do
 
 ## <ins> Improvements
+- Automatically detect the longitude and latitude when posting a tweet
+- Have a local database to store all the tweets that were posted/retrieved/deleted
+from all the users
+  
+- Implement a feature that will allow users to post tweets at a preferred time/date
