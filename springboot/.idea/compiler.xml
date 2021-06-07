@@ -7,13 +7,21 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="trading-app" />
+<<<<<<< Updated upstream
         <module name="springboot" />
+=======
+        <module name="twitter" />
+>>>>>>> Stashed changes
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="springboot" target="8" />
       <module name="trading-app" target="1.8" />
+<<<<<<< Updated upstream
       <module name="twitter" target="11.0.10" />
+=======
+      <module name="twitter" target="1.8" />
+>>>>>>> Stashed changes
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">

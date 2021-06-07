@@ -5,7 +5,10 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/../core_java/twitter/pom.xml" />
+<<<<<<< Updated upstream
         <option value="$PROJECT_DIR$/springboot/pom.xml" />
+=======
+>>>>>>> Stashed changes
       </list>
     </option>
     <option name="ignoredFiles">

@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/springboot/springboot.iml" filepath="$PROJECT_DIR$/springboot/springboot.iml" />
       <module fileurl="file://$PROJECT_DIR$/trading-app.iml" filepath="$PROJECT_DIR$/trading-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../core_java/twitter/twitter.iml" filepath="$PROJECT_DIR$/../core_java/twitter/twitter.iml" />
     </modules>
   </component>
 </project>
