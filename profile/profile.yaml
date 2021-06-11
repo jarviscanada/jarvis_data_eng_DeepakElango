@@ -1,0 +1,128 @@
+# Preferred name (Characters only)
+name: "Deepak Elango"
+# Your GitHub repo root URL
+github_repo_root_url: https://github.com/jarviscanada/jarvis_data_eng_DeepakElango
+
+# Introduce yourself, your academic and professional background.
+# What excites you about the software industry and your passion. At least 80 words
+summary: Electrical Engineering had taught me that even the most complicated problems could be solved by one consistently educating yourself
+  and by two breaking it down into smaller pieces. As a Junior Data Engineer at Jarvis, I was able to participate in various challenging projects using an
+  Agile/Scrum framework that allowed me to become proficient in technologies like Java, Git, SQL, Bash, Maven, and Docker. My interest in the Software Engineering
+  field stemmed from a basic heart-beat alarm clock that I made for my mom's birthday, something about the process of solving a complex problem by writing a few lines of code
+  on the computer made me fall in love with the field. Over the next few years, I would go on to teach myself data structures, algorithms,
+  and programming through various personal projects.
+  *[**Portfolio:**  https://drive.google.com/drive/folders/1k76_DsM81lgf7jHYU-8jScSd8Mnhv7kO?usp=sharing]*
+
+# Group your skills by level.
+# Your skills can be anything software related (e.g. language, frameworks, methodologies, software, etc.).
+skills:
+  # At least 5 skills
+  proficient:
+    - Java
+    - Linux/Bash
+    - RDBMS/SQL
+    - Agile/Scrum
+    - Git/GitHub
+    - Maven
+  # At least 5 skills
+  competent:
+    - Google Cloud Platform
+    - HTML/CSS/PHP/Javascript
+    - Matlab
+    - C
+    - C++
+    - Data Structures/Algorithms
+  # At least 5 skills
+  familiar:
+    - Python
+    - Verilog
+    - Assembly
+    - Operating Systems
+    - Andriod Developement
+
+# List of Jarvis projects
+jarvis_projects:
+  - name: "Cluster Monitor"
+    git_url: "/linux_sql"
+    # The project description allows hiring managers to understand your project and technologies you used(e.g. programming languages, libraries, algorithms, hardware, tools, etc.).
+    # The project description must start with an action verb (https://bit.ly/3guO98u)
+    description: Developed a Cluster Monitoring Agent for the Linux Cluster Administration Team at Jarvis
+      to monitor and gather data on hardware and resource usage in their system. This provided valuable information for the team as
+      they can now analyze and derive solutions from analyzing the data to efficiently allocate resources in the future. The project was designed, implemented, tested,
+      and deployed with; *Git, Docker, Bash Scripts, CentOS 7, PostgreSQL, and Google Cloud Platform*.
+  - name: "Core Java Apps"
+    git_url: "/core_java"
+    description:
+      - "Twitter App: "
+      - "JDBC App: Constructed the JDBC application to perform CRUD operations using DAO and DTO design patterns on a PostgreSQL retail store's database. "
+      - "Grep App: Created the Java Grep Application which is an implementation of the Linux Grep command which search for a string of characters in a given directory and ouputs them to another file. The application was created with Java SE 8 Lambda/Steam API's with Apache Maven and deployed using Docker."
+  - name: "Springboot App"
+    git_url: "/springboot"
+    description: ""
+  - name: "Python Data Analytics"
+    git_url: "/python_data_anlytics"
+    description: ""
+  - name: "Hadoop"
+    git_url: "/hadoop"
+    description: ""
+  - name: "Spark"
+    git_url: "/spark"
+    description: ""
+  - name: "Cloud/DevOps"
+    git_url: "/cloud_devops"
+    description: ""
+
+# List of personal or academic projects
+# Feel free to add more projects
+highlighted_projects:
+  #project name
+  - name: "Web app for restaurant"
+    #URL is optional
+    git_url: "https://github.com/jarviscanada/jarvis_profile_builder"
+    # The project description must start with an action verb (https://bit.ly/3guO98u)
+    description: Suspendisse a tincidunt odio. Suspendisse posuere luctus aliquet. Quisque magna tellus, tempor vitae arcu sed, volutpat scelerisque lacus. Aliquam varius pulvinar dapibus. Ut a tincidunt sem. Aenean sollicitudin fringilla erat ut imperdiet. Phasellus fermentum, enim vitae laoreet elementum, eros nisl hendrerit lorem.
+  - name: "Machine Learning"
+    git_url:
+    description: Suspendisse a tincidunt odio. Suspendisse posuere luctus aliquet. Quisque magna tellus, tempor vitae arcu sed, volutpat scelerisque lacus. Aliquam varius pulvinar dapibus. Ut a tincidunt sem. Aenean sollicitudin fringilla erat ut imperdiet. Phasellus fermentum, enim vitae laoreet elementum, eros nisl hendrerit lorem.
+
+#List of professional experience
+#The job description allows hiring managers to understand your job and the technologies you used(e.g. programming languages, libraries, algorithms, hardware, tools, etc.).
+#The description must be more than 25 words. If your experience is not software related, please focus on soft skills and achievements (e.g. team collaboration, problem-solving, improvements, communication).
+professional_experience:
+  #Write your Jarvis role as a professional experience rather than training.
+  - title: "Software Developer"
+    company: "Jarvis"
+    duration: "2020-present"
+    # The project description must start with an action verb (https://bit.ly/3guO98u)
+    description: "Gained fundamental skills in Communication | Adaptability | Patience | Responsibility | Confidence"
+  - title: "Public Relations Sector"
+    company: "(various positions)"
+    duration: "12+ years"
+    description: " Various companies *[Carleton Athletics, City of Toronto, Sick Kids/Sunnybrook Hospital, Toronto Corporation and Condominiums, Teleperformance, Food Sector [ Pizza Pizza | Eggsmart ], Private Tutor].* Gained fundamental skills in Communication | Adaptability | Patience | Responsibility | Confidence"
+
+#List of edcuation
+education:
+  - school_name: "Carleton University"
+    duration: "2016-2021"
+    degree: "Bachelor of Engineering"
+    department: "Electrical and Computer Engineering"
+    # optional
+    awards_achievements:
+      - "Carleton University Entrance Scholarship"
+      - "Sprott Foundation Scholarship Recipient [2017/2020]"
+
+#Optional section
+others:
+  #category
+  - title: "Certificates"
+    #list of items
+    bullets:
+      - "Udacity Machine Learning (2019)"
+  - title: "Awards"
+    bullets:
+      - "Winner"
+  - title: "Activities/Hobbies"
+    bullets:
+      - "Basketball player"
+      - "Competitive gaming"
+      - "Volunteer, ABC Food bank: Ut enim ad minim veniam"
