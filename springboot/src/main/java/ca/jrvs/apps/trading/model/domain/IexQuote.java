@@ -1,14 +1,9 @@
 package ca.jrvs.apps.trading.model.domain;
 
-import java.util.HashMap;
-import java.util.Map;
-import javax.annotation.Generated;
-import com.fasterxml.jackson.annotation.JsonAnyGetter;
-import com.fasterxml.jackson.annotation.JsonAnySetter;
-import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.fasterxml.jackson.annotation.JsonInclude;
-import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+import com.fasterxml.jackson.annotation.*;
+
+import javax.annotation.processing.*;
+import java.util.*;
 
 /**
  * https://iexcloud.io/docs/api/#quote
@@ -72,7 +67,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
         "isUSMarketOpen"
 })
 @Generated("jsonschema2pojo")
-class IexQuote {
+public class IexQuote {
 
     @JsonProperty("symbol")
     private String symbol;

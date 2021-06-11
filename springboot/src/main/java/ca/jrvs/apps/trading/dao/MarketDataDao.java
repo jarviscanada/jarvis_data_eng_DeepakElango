@@ -11,11 +11,12 @@ public class MarketDataDao implements CrudRepository<IexQuote, String> {
     private static final String IEX_BATCH_PATH = "/stock/market/batch?symbols=%s&types=quote&token=";
     private final String IEX_BATCH_URL;
 
-    private final Logger logger = LoggerFactory.getLogger(MarketDataDao.class);
+    private Logger logger = LoggerFactory.getLogger(MarketDataDao.class);
     private HttpClientConnectionManager httpClientConnectionManager;
 
     @Autowired
-    public MarketDataDao(HttpClientConnectionManager httpClientConnectionManager, MarketDataConfig marketDataConfig) {
+    public MarketDataDao(HttpClientConnectionManager httpClientConnectionManager,
+                         MarketDataConfig marketDataConfig) {
         this.httpClientConnectionManager = httpClientConnectionManager;
         IEX_BATCH_URL = marketDataConfig.getHost() + IEX_BATCH_PATH + marketDataConfig.getToken();
     }
