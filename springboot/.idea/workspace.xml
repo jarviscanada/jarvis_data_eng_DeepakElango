@@ -56,6 +56,19 @@
       <recent name="ca.jrvs.apps.trading.dao" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -67,7 +80,7 @@
       <workItem from="1623433063444" duration="75000" />
       <workItem from="1623433173761" duration="8668000" />
       <workItem from="1624118252869" duration="973000" />
-      <workItem from="1624129188018" duration="461000" />
+      <workItem from="1624129188018" duration="3539000" />
     </task>
     <servers />
   </component>
