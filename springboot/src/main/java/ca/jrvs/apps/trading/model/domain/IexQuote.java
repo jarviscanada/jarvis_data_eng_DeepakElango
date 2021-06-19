@@ -72,6 +72,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
         "isUSMarketOpen"
 })
 @Generated("jsonschema2pojo")
+public
 class IexQuote {
 
     @JsonProperty("symbol")
