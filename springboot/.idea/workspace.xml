@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d1aee886-7c06-4683-a5f4-cab0b8f6d708" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/Resource/schema.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ca/jrvs/apps/trading/TestConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/springboot.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/springboot.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ca/jrvs/apps/trading/dao/QuoteDaoIntTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -18,10 +16,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit4 Test Class" />
         <option value="Interface" />
         <option value="Class" />
         <option value="Kotlin Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
