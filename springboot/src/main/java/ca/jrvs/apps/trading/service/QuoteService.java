@@ -20,11 +20,11 @@ public class QuoteService {
     private MarketDataDao marketDataDao;
     //private QuoteDao quoteDao;
 
-   // @Autowired
-   // public QuoteService(QuoteDao quoteDao, MarketDataDao marketDataDao) {
-    //    this.quoteDao = quoteDao;
-    //    this.marketDataDao = marketDataDao;
-   // }
+   @Autowired
+   public QuoteService(QuoteDao quoteDao, MarketDataDao marketDataDao) {
+        this.quoteDao = quoteDao;
+        this.marketDataDao = marketDataDao;
+    }
 
     /**
      * Find an IexQuote
