@@ -15,7 +15,7 @@ import java.util.List;
 @RequestMapping("/quote")
 public class QuoteController {
 
-    private QuoteService quoteService;
+    private final QuoteService quoteService;
 
     @Autowired
     public QuoteController(QuoteService quoteService) {
