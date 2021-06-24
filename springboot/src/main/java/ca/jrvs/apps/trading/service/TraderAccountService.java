@@ -1,8 +1,12 @@
 package ca.jrvs.apps.trading.service;
 
+import ca.jrvs.apps.trading.dao.AccountDao;
 import ca.jrvs.apps.trading.dao.QuoteDao;
 import ca.jrvs.apps.trading.dao.TraderDao;
+import ca.jrvs.apps.trading.dao.*;
+import ca.jrvs.apps.trading.model.domain.Account;
 import ca.jrvs.apps.trading.model.domain.Trader;
+import ca.jrvs.apps.trading.model.domain.TraderAccountView;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
@@ -15,8 +19,7 @@ public class TraderAccountService {
     private PositionDao positionDao;
     private SecurityOrderDao securityOrderDao;
 
-    public TraderAccountService(TraderDao traderDao, AccountDao accountDao, PositionDao positionDao,
-                                SecurityOrderDao securityOrderDao) {
+    public TraderAccountService(TraderDao traderDao, AccountDao accountDao, PositionDao positionDao, SecurityOrderDao securityOrderDao) {
         this.traderDao = traderDao;
         this.accountDao = accountDao;
         this.positionDao = positionDao;
@@ -33,7 +36,13 @@ public class TraderAccountService {
      * accountId
      */
     public TraderAccountView createTraderAndAccount(Trader trader) {
-
+        traderDao.save(trader);
+        Account account = new Account();
+        account.setTraderId(trader.getId());
+        account.setId(trader.getId());
+        account.setAmount((double) 0);
+        accountDao.save(account);
+        return new TraderAccountView(trader, account);
     }
 
     /**
@@ -54,7 +63,7 @@ public class TraderAccountService {
      * - accountDao.updateAmountById
      */
     public Account deposit(Integer traderId, Double fund) {
-
+        return null;
      }
 
     /**
@@ -64,7 +73,6 @@ public class TraderAccountService {
      * - accountDao.updateAmountById
      */
     public Account withdraw(Integer traderId, Double fund) {
-
+        return null;
     }
-
 }
