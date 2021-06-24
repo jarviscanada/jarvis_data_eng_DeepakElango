@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d1aee886-7c06-4683-a5f4-cab0b8f6d708" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/ca/jrvs/apps/trading/service/TraderAccountServiceIntTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ca/jrvs/apps/trading/service/TraderAccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/jrvs/apps/trading/service/TraderAccountService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +18,8 @@
       <list>
         <option value="Interface" />
         <option value="Kotlin Class" />
-        <option value="JUnit4 Test Class" />
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -59,8 +59,8 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
-      <recent name="ca.jrvs.apps.trading.dao" />
       <recent name="ca.jrvs.apps.trading.service" />
+      <recent name="ca.jrvs.apps.trading.dao" />
     </key>
   </component>
   <component name="RunManager">
