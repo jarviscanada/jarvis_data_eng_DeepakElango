@@ -5,13 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d1aee886-7c06-4683-a5f4-cab0b8f6d708" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ca/jrvs/apps/trading/dao/AccountDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ca/jrvs/apps/trading/dao/PositionDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ca/jrvs/apps/trading/dao/SecurityOrderDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ca/jrvs/apps/trading/model/domain/Account.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ca/jrvs/apps/trading/model/domain/Position.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ca/jrvs/apps/trading/model/domain/SecurityOrder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ca/jrvs/apps/trading/model/domain/TraderAccountView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ca/jrvs/apps/trading/service/TraderAccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/jrvs/apps/trading/service/TraderAccountService.java" afterDir="false" />
     </list>
