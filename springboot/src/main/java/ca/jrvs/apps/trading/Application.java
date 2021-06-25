@@ -21,12 +21,6 @@ public class Application implements CommandLineRunner {
 
     @Autowired
     private QuoteService quoteService;
-    private final QuoteController controller;
-
-    public Application(QuoteService quoteService, QuoteController controller) {
-        this.quoteService = quoteService;
-        this.controller = controller;
-    }
 
     public static void main(String[] args) throws Exception {
         SpringApplication app = new SpringApplication(Application.class);
@@ -35,6 +29,5 @@ public class Application implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        Arrays.stream(args).forEach(controller::getQuote);
     }
 }
