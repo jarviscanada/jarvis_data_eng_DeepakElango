@@ -1,0 +1,36 @@
+-------------------------------------------------------------------------------
+Test set: ca.jrvs.apps.trading.service.TraderAccountServiceIntTest
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 0, Errors: 8, Skipped: 0, Time elapsed: 0.005 s <<< FAILURE! - in ca.jrvs.apps.trading.service.TraderAccountServiceIntTest
+withdraw(ca.jrvs.apps.trading.service.TraderAccountServiceIntTest)  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.NullPointerException
+	at ca.jrvs.apps.trading.service.TraderAccountServiceIntTest.setUp(TraderAccountServiceIntTest.java:37)
+
+withdraw(ca.jrvs.apps.trading.service.TraderAccountServiceIntTest)  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.NullPointerException
+	at ca.jrvs.apps.trading.service.TraderAccountServiceIntTest.tearDown(TraderAccountServiceIntTest.java:42)
+
+deleteTraderById(ca.jrvs.apps.trading.service.TraderAccountServiceIntTest)  Time elapsed: 0 s  <<< ERROR!
+java.lang.NullPointerException
+	at ca.jrvs.apps.trading.service.TraderAccountServiceIntTest.setUp(TraderAccountServiceIntTest.java:37)
+
+deleteTraderById(ca.jrvs.apps.trading.service.TraderAccountServiceIntTest)  Time elapsed: 0 s  <<< ERROR!
+java.lang.NullPointerException
+	at ca.jrvs.apps.trading.service.TraderAccountServiceIntTest.tearDown(TraderAccountServiceIntTest.java:42)
+
+deposit(ca.jrvs.apps.trading.service.TraderAccountServiceIntTest)  Time elapsed: 0 s  <<< ERROR!
+java.lang.NullPointerException
+	at ca.jrvs.apps.trading.service.TraderAccountServiceIntTest.setUp(TraderAccountServiceIntTest.java:37)
+
+deposit(ca.jrvs.apps.trading.service.TraderAccountServiceIntTest)  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.NullPointerException
+	at ca.jrvs.apps.trading.service.TraderAccountServiceIntTest.tearDown(TraderAccountServiceIntTest.java:42)
+
+createTraderAndAccount(ca.jrvs.apps.trading.service.TraderAccountServiceIntTest)  Time elapsed: 0 s  <<< ERROR!
+java.lang.NullPointerException
+	at ca.jrvs.apps.trading.service.TraderAccountServiceIntTest.setUp(TraderAccountServiceIntTest.java:37)
+
+createTraderAndAccount(ca.jrvs.apps.trading.service.TraderAccountServiceIntTest)  Time elapsed: 0 s  <<< ERROR!
+java.lang.NullPointerException
+	at ca.jrvs.apps.trading.service.TraderAccountServiceIntTest.tearDown(TraderAccountServiceIntTest.java:42)
+
