@@ -5,7 +5,7 @@
 * [Quick Start](##QuickStart)
 * [Implemenation](##Implemenation)
 * [Test](##Test)
-* [Deployment](#Deployment)
+* [Deployment](##Deployment)
 * [Improvements](##Improvements)
 
 ## <ins> Introduction
@@ -130,7 +130,7 @@ same as /trader/, except that the trader object is passed in the URL instead of 
 The application was tested using JUnit 4 Integration tests for the `Controller`, `Service`, and `Data Access` Layer. 
 The code coverage was more than 60%.
 
-# <ins> Deployment
+## <ins> Deployment
 The `Springboot Application` and `PostgreSQL Database` was dockerized, so it's can be easily deployed to any server.
 
 **<ins> Stage 1: </ins>**
