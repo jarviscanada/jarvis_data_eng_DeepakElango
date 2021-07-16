@@ -75,5 +75,3 @@ The `LGS Jupyter Notebook]` consists of the following sections:
 - Identify any significant trends or backlash the company might have faced during this period that could
   have affected customer behaviour. This could be accomplished by taking a closer look at other department's
   behaviour over the timeframe
-  
-
