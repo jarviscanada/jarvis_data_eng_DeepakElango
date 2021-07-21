@@ -50,7 +50,7 @@ The report will be used by the LGS marketing team to develop targeted marketing 
 **Virtual Resume (Template)** [View](https://drive.google.com/drive/folders/11MYSLJYTK2ZeQLlHC3PIt5do8BzFOS-0):
 Currently designing a personal website from scratch that will feature a virtual resume.
 In addition to past projects, awards, and experiences, it will include a login system that will make each user experience unique.
-The project is being designed and implemented with HTML5, CSS3, JavaScript, jQuery, PHP, SQL, Adobe Photoshop CS2, ATOM
+The project is being designed and implemented with HTML5, CSS3, JavaScript, jQuery, PHP, SQL, Adobe Photoshop CS2, ATOM.
 
 **Java Alarm Clock** [View](https://drive.google.com/drive/folders/1aBQZYtKl1ie6hghDBYRGUF93yGjJNuqY):
 Created a 12-hour AM/PM alarm clock that was built by using BlueJ's IDE in Java. 
