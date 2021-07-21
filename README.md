@@ -50,7 +50,7 @@ The report will be used by the LGS marketing team to develop targeted marketing 
 **Virtual Resume (Template)** [View](https://drive.google.com/drive/folders/11MYSLJYTK2ZeQLlHC3PIt5do8BzFOS-0):
 Currently designing a personal website from scratch that will feature a virtual resume.
 In addition to past projects, awards, and experiences, it will include a login system that will make each user experience unique.
-The project is being designed and implemented with HTML5, CSS3, JavaScript, jQuery, PHP, SQL, Adobe Photoshop CS2, ATOM.
+The project is being designed and implemented with *HTML5, CSS3, JavaScript, jQuery, PHP, SQL, Adobe Photoshop CS2, ATOM*.
 
 **Java Alarm Clock** [View](https://drive.google.com/drive/folders/1aBQZYtKl1ie6hghDBYRGUF93yGjJNuqY):
 Created a 12-hour AM/PM alarm clock that was built by using BlueJ's IDE in Java. 
@@ -76,7 +76,7 @@ Gained fundamental skills in Communication | Adaptability | Patience | Responsib
 
 
 ## Education
-**Carleton University (2016-2021)**, B.Eng. in Electrical and Computer Engineering
+**Carleton University (2016-2021)**, Bachelor of Engineering in Electrical and Computer Engineering
 - Carleton University Entrance Scholarship
 - Sprott Foundation Scholarship Recipient [2017/2020]
 
@@ -86,3 +86,4 @@ Gained fundamental skills in Communication | Adaptability | Patience | Responsib
 - Equals6 Top Talent Scholarship
 - TDSB Student Leadership award for the year 2009
 - International Baccalaureate (IB) Program/Ontario Scholar
+- Electronic Hobbyist
