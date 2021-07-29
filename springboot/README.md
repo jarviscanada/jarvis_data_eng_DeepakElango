@@ -10,9 +10,9 @@
 
 ## <ins> Introduction
 
-The `Springboot Application` is aimed at replacing Jarvis Consulting's Trading Team's legacy system which is a monolithic 
+The `Springboot Application` is aimed at replacing Jarvis Consulting Trading Team's legacy system which is a monolithic 
 application that is hard to scale and manage. The `Springboot Application` is capable of managing trader's account, 
-buy/sell stocks with funds that you can deposit/withdraw as well as fetch stock information for any company. The
+buying/selling stocks with funds that you can deposit/withdraw as well as fetch stock information for any company. The
 application fetches data from IEX Cloud which offers free market data (e.g. stock price) via its REST API. Apache Tomcat
 was used to allow java code to run on an HTTP web server, and SwaggerUI was used to visualize and interact with the application.
 

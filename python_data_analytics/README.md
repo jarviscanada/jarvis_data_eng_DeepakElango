@@ -24,7 +24,7 @@ that the LGS's IT team dump their transaction data between 01/12/2009 and 09/12/
 which will be used by the JSD team to set up a local data warehouse using PostgreSQL and analyze the data
 using Jupyter Notebook
 
-#####__Attributes__
+##### __Attributes__
 The SQL file `[retail.sql]` contains the following attributes:
 
 - `invoice_no:` The Invoice number is a 6-digit integral number uniquely assigned to each transaction. If this code starts with the letter `'C'`, it indicates a cancellation

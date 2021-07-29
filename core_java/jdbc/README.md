@@ -11,7 +11,7 @@ database to store all their customer's information. This would allow the busines
 queries to effectively view or modify their orders for any given period. 
 
 __Technologies:__
-> Git | Docker | Java SE 8 | JDBC API | Apache Maven | PostgreSQL 
+> Git | Java SE 8 | JDBC API | Apache Maven | PostgreSQL 
 
 ## <ins> Entity-Relationship Model
 ![my image](./assets/ER.png)
