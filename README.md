@@ -43,7 +43,7 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_DeepakElan
 
 **Technical Advisor, Geography Department, Carleton University (2019-2020)**: Developed technical skills by debugging client’s code in Python/C++, and redesigned the hardware to eliminate the problem associated with the Permafrost Monitoring Raspberry Pi camera based module so system would work autonomously in the Artic Circle.
 
-**Public Relations Sector, (various positions) (12+ years)**:  Various companies *[Carleton Athletics, City of Toronto, Sick Kids/Sunnybrook Hospital, Toronto Corporation and Condominiums, Teleperformance, Food Sector [ Pizza Pizza | Eggsmart ], Private Tutor].* Gained fundamental skills in Communication | Adaptability | Patience | Responsibility | Confidence
+**Public Relations Sector, (various positions) (12+ years)**:  Various companies *[Carleton Athletics, City of Toronto, Sick Kids/Sunnybrook Hospital, Toronto Corporation and Condominiums, Teleperformance, Food Sector [ Pizza Pizza | Eggsmart ], Private Tutor].* Gained fundamental skills in Communication | Adaptability | Patience | Responsibility | Confidence.
 
 
 ## Education
