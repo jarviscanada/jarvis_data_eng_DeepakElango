@@ -25,6 +25,16 @@ public class TwoSum {
     return null;
   }
 
-
-
+  public static int[] sortTwoSum(int[] arr, int target) {
+    Arrays.sort(arr);
+    int first = 0;
+    int last = arr.length - 1;
+    while (first < last) {
+      if ((arr[first] + arr[last]) == target) {
+        return new int[] {first, last};
+      }
+      last--;
+    }
+      return null;
+  }
 }
