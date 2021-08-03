@@ -10,7 +10,6 @@
  * <p>You may assume that each input would have exactly one solution, and you may not use the same
  * element twice.
  */
-
 import java.util.*;
 
 public class TwoSum {
@@ -35,6 +34,19 @@ public class TwoSum {
       }
       last--;
     }
-      return null;
+    return null;
+  }
+
+  public static int[] hashMapTwoSum(int[] arr, int target) {
+    Map<Integer, Integer> hashMap = new HashMap<Integer, Integer>();
+    for (int i = 0; i < arr.length; i++) {
+      hashMap.put(arr[i], i);
+    }
+    for (int j = 0; j < arr.length; j++) {
+      if (hashMap.containsKey(target - arr[j])) {
+        return new int[] {j, hashMap.get(target - arr[j])};
+      }
+    }
+    return null;
   }
 }
