@@ -8,6 +8,6 @@ public class RotateStringTest {
   public void rotateString() {
     String test1 = "abcde";
     String test2 = "cdeab";
-    assertTrue(RotateString.rotateString(test1,test2));
+    assertTrue(RotateString.rotateString(test1, test2));
   }
 }
