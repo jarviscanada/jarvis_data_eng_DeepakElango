@@ -1,4 +1,5 @@
 import java.util.Arrays;
+import java.util.HashSet;
 
 /**
  * Given an array nums containing n distinct numbers in the range [0, n], return the only number in
@@ -22,5 +23,6 @@ public class MissingNumber {
       1, 2, 3, 5,
     };
     System.out.println(missingNumber(arr));
+    //System.out.println(missingNumberSet(arr));
   }
 }
