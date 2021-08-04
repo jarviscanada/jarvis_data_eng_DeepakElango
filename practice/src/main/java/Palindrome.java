@@ -19,4 +19,20 @@ public class Palindrome {
     }
     return true;
   }
+
+  public static boolean recursion(String s, int begin, int end) {
+    begin = 0;
+    end = s.length() - 1;
+
+    while (begin >= end) {
+      if (s.charAt(begin) == s.charAt(end)) {
+        begin++;
+        end--;
+        return recursion(s, begin, end);
+      } else {
+        return false;
+      }
+    }
+    return true;
+  }
 }
