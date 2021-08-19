@@ -1,10 +1,10 @@
 # Hadoop
 
 Table of contents
-* [Introduction](#Introduction)
-* [Hadoop Cluster](#HadoopCluster)
-* [Hive Project](#Hive Project)
-* [Improvements](#Improvements)
+* [Introduction](##Introduction)
+* [Hadoop Cluster](##HadoopCluster)
+* [Hive Project](##Hive Project)
+* [Improvements](##Improvements)
 
 ## Introduction
 The Data Analytics team at LGS Gift Shop wanted to switch to some Big Data Platform to process data, hence
