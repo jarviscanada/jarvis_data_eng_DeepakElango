@@ -2,11 +2,11 @@
 
 Table of contents
 * [Introduction](##Introduction)
-* [Hadoop Cluster](#Hadoop Cluster)
-* [Hive Project](# Hive Project)
+* [Hadoop Cluster](#HadoopCluster)
+* [Hive Project](#Hive Project)
 * [Improvements](##Improvements)
 
-## Introduction
+# Introduction
 The Data Analytics team at LGS Gift Shop wanted to switch to some Big Data Platform to process data, hence
 they hired my team, and I to help them transition into a Hadoop ecosystem. Our responsibility 
 comprised of Evaluate Core Hadoop components, including MapReduce, HDFS, and YARN, 
@@ -16,7 +16,7 @@ provision a Hadoop Cluster using GCP, and solve business problem using Apache Hi
 __Technologies:__
 > <span style = "color:green"> Hadoop | Apache Hive | Google Cloud Platform | Zeppelin Notebook  </span>
 
-## Hadoop Cluster
+# Hadoop Cluster
 
 ![my image](./assets/cluster.png)
 
@@ -37,7 +37,7 @@ Specifications:
 - 13 GB RAM
 - Minimum 100 GB Disk Space
 
-## Hive Project
+# Hive Project
 
 The queries were optimized using a table that is partitioned by year, this would allow us to access data more efficiently as we 
 are accessing only the required partition rather than loading all the data into the memory. I also used a columnar
@@ -46,6 +46,6 @@ table to decrease the space the data takes.
 ![my image](./assets/hadoop.png)
 
 
-## Improvements
+# Improvements
 - Increase the amount of worker nodes in the cluster so that the system can perform more efficiently with large datasets
 - The execution time for Apache Spark is significantly better than Apache Tez
