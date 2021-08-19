@@ -2,7 +2,7 @@
 
 Table of contents
 * [Introduction](##Introduction)
-* [Hadoop Cluster](##HadoopCluster)
+* [Hadoop Cluster](##Hadoop Cluster)
 * [Hive Project](##Hive Project)
 * [Improvements](##Improvements)
 
