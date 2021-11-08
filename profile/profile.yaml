@@ -83,7 +83,7 @@ highlighted_projects:
     #URL is optional
     git_url: "https://github.com/deelango/UberEarningsCalculator"
     # The project description must start with an action verb (https://bit.ly/3guO98u)
-    description: "Currently designing an application that would take input of the number of hours worked, kms driven, total money earned, and total money spent on gas for any particular date for me doing uber. It will record the data in a PostgreSQL database which I can use later to analyze if me doing uber is profittable from a business standpoint."
+    description: "Currently designing an application that would take input of the number of hours worked, kms driven, total money earned, and total money spent on gas for any particular date for me doing uber. It will record the data in a PostgreSQL database which I can use later to analyze if me doing uber is profitable from a business standpoint."
   - name: "Virtual Resume (Template)"
     #URL is optional
     git_url:
@@ -101,10 +101,10 @@ highlighted_projects:
 #The description must be more than 25 words. If your experience is not software related, please focus on soft skills and achievements (e.g. team collaboration, problem-solving, improvements, communication).
 professional_experience:
   #Write your Jarvis role as a professional experience rather than training.
-  - title: "Application Developer Consultant"
-    company: "CIBC Anti-Money Laundering Department"
+  - title: "Application Developer"
+    company: "CIBC Anti-Money Laundering"
     duration: "2021 [2 months]"
-    description: "Worked as an Application Developer in a small Agile/Scrum environment where I refactored Java into Scala code and built an Extract-Transform-Load pipeline for the Alert-Ingestion project, where we take high priority alerts from various file sources, transform, and load them into a Database that various parties within the AML deparment can extract and analyze. Built various test cases for my ETL pipeline using ScalaTest to identify any bugs and test whether the components are doing what they are supposed to do."
+    description: "Worked as an Application Developer in a small Agile/Scrum environment where I refactored Java into Scala code and built an Extract-Transform-Load pipeline for the Alert-Ingestion project, where we take high priority alerts from various file sources, transform, and load them into a Database that various parties within the AML department can extract and analyze. Built various test cases for my ETL pipeline using ScalaTest to identify any bugs and test whether the components are doing what they are supposed to do."
   - title: "Data Engineer"
     company: "Jarvis"
     duration: "2020-present"
