@@ -30,6 +30,8 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_DeepakElan
 
 
 ## Highlighted Projects
+**UberEarningsCalculator Database Repository** [[GitHub](https://github.com/deelango/UberEarningsCalculator)]: Currently designing an application that would take input of the number of hours worked, kms driven, total money earned, and total money spent on gas for any particular date for me doing uber. It will record the data in a PostgreSQL database which I can use later to analyze if me doing uber is profittable from a business standpoint.
+
 **Virtual Resume (Template)**: Currently designing a personal website from scratch that will feature a virtual resume. In addition to past projects, awards, and experiences, it will include a login system that will make each user experience unique. The project is being designed and implemented with *HTML5, CSS3, JavaScript, jQuery, PHP, SQL, Adobe Photoshop CS2, ATOM*.
 
 **Java Alarm Clock**: Created a 12-hour AM/PM alarm clock that was built by using BlueJ's IDE in Java. I implemented an unique feature that would allow the user to add personalized messages with each alarm.
@@ -38,6 +40,8 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_DeepakElan
 
 
 ## Professional Experiences
+
+**Application Developer Consultant, CIBC Anti-Money Laundering Department (2021 [2 months])**: Worked as an Application Developer in a small Agile/Scrum environment where I refactored Java into Scala code and built an Extract-Transform-Load pipeline for the Alert-Ingestion project, where we take high priority alerts from various file sources, transform, and load them into a Database that various parties within the AML deparment can extract and analyze. Built various test cases for my ETL pipeline using ScalaTest to identify any bugs and test whether the components are doing what they are supposed to do.
 
 **Data Engineer, Jarvis (2020-present)**: Worked as a Data Engineer in a small Agile/Scrum environment to develop and implement solutions to various problems within the Jarvis team as well as small businesses within the community. The projects were implemented using Git/GitHub, Docker, Bash Scripts, CentOS 7, PostgreSQL, Python, Java SE 8, Apache Maven, Springboot, Apache Tomcat, JDBC API, Twitter REST API, and cloud services. Integration and Unit testing was performed across all projects with a code coverage over 60%.
 
