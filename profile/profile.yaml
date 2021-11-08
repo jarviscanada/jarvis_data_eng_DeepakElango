@@ -79,22 +79,22 @@ jarvis_projects:
 # Feel free to add more projects
 highlighted_projects:
   #project name
-  - - name: "UberEarningsCalculator Database Repository"
+  - name: "UberEarningsCalculator Database Repository"
         #URL is optional
         git_url: "https://github.com/deelango/UberEarningsCalculator"
         # The project description must start with an action verb (https://bit.ly/3guO98u)
-        description: Currently designing an application that would take input of the number of hours worked, kms driven, total money earned, and total money spent on gas for any particular date for me doing uber. It will record the data in a PostgreSQL database which I can use later to analyze if me doing uber is profittable from a business standpoint.
+        description: "Currently designing an application that would take input of the number of hours worked, kms driven, total money earned, and total money spent on gas for any particular date for me doing uber. It will record the data in a PostgreSQL database which I can use later to analyze if me doing uber is profittable from a business standpoint."
   - name: "Virtual Resume (Template)"
     #URL is optional
     git_url:
     # The project description must start with an action verb (https://bit.ly/3guO98u)
-    description: Currently designing a personal website from scratch that will feature a virtual resume. In addition to past projects, awards, and experiences, it will include a login system that will make each user experience unique. The project is being designed and implemented with *HTML5, CSS3, JavaScript, jQuery, PHP, SQL, Adobe Photoshop CS2, ATOM*.
+    description: "Currently designing a personal website from scratch that will feature a virtual resume. In addition to past projects, awards, and experiences, it will include a login system that will make each user experience unique. The project is being designed and implemented with *HTML5, CSS3, JavaScript, jQuery, PHP, SQL, Adobe Photoshop CS2, ATOM*."
   - name: "Java Alarm Clock"
     git_url:
-    description: Created a 12-hour AM/PM alarm clock that was built by using BlueJ's IDE in Java. I implemented an unique feature that would allow the user to add personalized messages with each alarm.
+    description: "Created a 12-hour AM/PM alarm clock that was built by using BlueJ's IDE in Java. I implemented an unique feature that would allow the user to add personalized messages with each alarm."
   - name: "5G Wireless Front-End Transceiver"
     git_url:
-    description: Designed a Voltage Controlled Oscillator (VCO) using a 45nm CMOS SOI kit from Global Foundries in Cadence Virtuoso. The VCO is capable of operating in frequencies ranging from 27.5 GHz to 28.5 GHz.
+    description: "Designed a Voltage Controlled Oscillator (VCO) using a 45nm CMOS SOI kit from Global Foundries in Cadence Virtuoso. The VCO is capable of operating in frequencies ranging from 27.5 GHz to 28.5 GHz."
 
 #List of professional experience
 #The job description allows hiring managers to understand your job and the technologies you used(e.g. programming languages, libraries, algorithms, hardware, tools, etc.).
